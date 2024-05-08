@@ -48,7 +48,7 @@ This project is licensed under the MIT License. See LICENSE for details.
 This project utilizes the following libraries and resources:
 - Streamlit: A Python library for building web applications
 - Groq: A language model API for natural language processing
-- IELTS Task 2 criteria: [Official IELTS website](https://writing9.com/)
+- IELTS Task 2 criteria: [Based on writing9 website](https://writing9.com/)
 
 ## Contact
 For any questions, issues, or feedback, please contact MortalJudgment

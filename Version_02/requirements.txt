@@ -1,0 +1,4 @@
+pydantic
+streamlit==1.31.0
+crewai==0.1.32
+langchain-groq==0.0.1

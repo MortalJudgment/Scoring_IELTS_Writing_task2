@@ -1,4 +1,0 @@
-streamlit
-rich
-groq
-python-dotenv

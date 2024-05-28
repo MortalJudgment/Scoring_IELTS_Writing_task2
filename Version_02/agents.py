@@ -6,10 +6,10 @@ from langchain.agents import Tool
 from langchain.chains import LLMChain
 from langchain.memory import ConversationBufferMemory, ReadOnlySharedMemory
 from langchain.prompts import PromptTemplate
-from prompt import*
+from .prompt import*
 from langchain_groq import ChatGroq
 from langchain_google_genai import ChatGoogleGenerativeAI
-from compute_overall_bandscore import compute_writing_score
+from .compute_overall_bandscore import compute_writing_score
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -76,7 +76,7 @@ class Agents():
                     Take all the results then compute the final overall band.
                     """),
             llm = chat_groq(model_name = secretary),
-            # tools = [compute_writing_score],
+            tools = [compute_writing_score],
             verbose=True,
             # max_rpm = 5
             )

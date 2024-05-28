@@ -2,10 +2,6 @@ import streamlit as st
 import os
 from groq import Groq
 
-# from langchain.chains import ConversationChain
-# from langchain.chains.conversation.memory import ConversationBufferWindowMemory
-# from langchain_groq import ChatGroq
-# from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 
 from action1 import get_score
@@ -14,7 +10,6 @@ from action3 import suggest_outline
 
 load_dotenv()
 
-# groq_api_key = "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"
 groq_api_key = os.environ.get("GROQ_API_KEY")
 
 if groq_api_key is None:

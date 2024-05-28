@@ -1,4 +1,4 @@
-from CoT_prompt import get_CoT_prompt_CC, get_CoT_prompt_LR, get_CoT_prompt_GR, get_CoT_prompt_TA
+from .CoT_prompt import get_CoT_prompt_CC, get_CoT_prompt_LR, get_CoT_prompt_GR, get_CoT_prompt_TA
 
 def get_score(question, essay, chat, criteria, criteria_item):
     """
